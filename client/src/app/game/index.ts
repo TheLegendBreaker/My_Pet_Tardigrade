@@ -1,7 +1,7 @@
-import {GameComponent} from './game/game.component';
 import { GameMenuComponent } from './game-menu/game-menu.component';
+import { GameViewComponent } from './game-view/game-view.component';
 
-export const components = [GameComponent, GameMenuComponent];
+export const components = [GameViewComponent, GameMenuComponent];
 
-export * from './game/game.component';
+export * from './game-view/game-view.component';
 export * from './game-menu/game-menu.component';
