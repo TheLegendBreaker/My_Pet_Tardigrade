@@ -4,24 +4,19 @@
 		<title>THREE.js tutorial - step 2</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <style>
-            body{ margin: 0; }
-        </style>
+       		<link rel="stylesheet" href="styles.css"> 
+		<script src="./static/newgame.js"></script>
+
 	</head>
 
 	<body>
-		<script src="./libs/three.min.js"></script>
-		<script src="./libs/inflate.min.js"></script>
-		<script src="./libs/FBXLoader.js"></script>
-		<script src="./libs/OrbitControls.js"></script>
-		<script src="./libs/Detector.js"></script>
-		<script src="./game_js/game.js"></script>
-		<script>
-			document.addEventListener("DOMContentLoaded", function(){
-				const game = new Game();
-				window.game = game;//For debugging only
-			});
-		</script>
+		  <canvas id="c"></canvas>
+  <div id="loading">
+    <div>
+      <div>...loading...</div>
+      <div class="progress"><div id="progressbar"></div></div>
+    </div>
+  </div>
 	</body>
 </html>
 

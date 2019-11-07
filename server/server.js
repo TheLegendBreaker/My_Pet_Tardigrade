@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/static/libs'));
 app.use(express.static(__dirname + '/static/game_js'));
 
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + 'static/index.html');
+	res.render('index');
 })
 
 app.listen(5001,() => console.log('listening on port 5001'));
